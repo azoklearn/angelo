@@ -8,6 +8,7 @@ import {
   CalendarCheck,
   CheckCircle2,
   Clock3,
+  X,
   Hammer,
   Home,
   Leaf,
@@ -189,6 +190,7 @@ function SectionTitle({
 
 export default function HomePage() {
   const [comparison, setComparison] = useState(50);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <main className="overflow-hidden">
@@ -219,10 +221,46 @@ export default function HomePage() {
           >
             Appeler
           </a>
-          <button aria-label="Menu" className="grid size-11 place-items-center rounded-full bg-white/70 text-[var(--forest)] md:hidden">
-            <Menu size={20} />
+          <button
+            type="button"
+            aria-label={mobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={mobileMenuOpen}
+            onClick={() => setMobileMenuOpen((open) => !open)}
+            className="grid size-11 place-items-center rounded-full bg-white/70 text-[var(--forest)] md:hidden"
+          >
+            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </nav>
+        {mobileMenuOpen ? (
+          <motion.div
+            initial={{ opacity: 0, y: -10, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            className="glass mx-auto mt-3 grid w-full max-w-6xl gap-2 rounded-[28px] p-3 md:hidden"
+          >
+            {[
+              { href: "#services", label: "Services" },
+              { href: "#galerie", label: "Avant / Après" },
+              { href: "#contact", label: "Contact" },
+            ].map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="rounded-2xl px-5 py-4 font-semibold text-[var(--forest)] transition hover:bg-white"
+              >
+                {item.label}
+              </a>
+            ))}
+            <a
+              href={`tel:${phone}`}
+              onClick={() => setMobileMenuOpen(false)}
+              className="mt-1 inline-flex items-center justify-center gap-3 rounded-full bg-[var(--forest)] px-5 py-4 font-semibold text-white"
+            >
+              <Phone size={18} />
+              Appeler maintenant
+            </a>
+          </motion.div>
+        ) : null}
       </header>
 
       <section id="accueil" className="noise relative min-h-[92svh] overflow-hidden bg-[var(--forest-deep)] text-white">
