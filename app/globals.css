@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --forest: #1f3d2b;
+  --forest-deep: #122419;
+  --leaf: #8fcf9a;
+  --leaf-bright: #b8e5bd;
+  --paper: #fbfcf9;
+  --mist: #eef3ee;
+  --ink: #172018;
+  --muted: #69736a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 85% 12%, rgba(143, 207, 154, 0.18), transparent 28rem),
+    linear-gradient(180deg, #ffffff 0%, var(--paper) 45%, #f3f7f1 100%);
+  font-family: "Avenir Next", "SF Pro Display", "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
+body::selection {
+  color: white;
+  background: var(--forest);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.noise {
+  position: relative;
+}
+
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image:
+    linear-gradient(90deg, rgba(31, 61, 43, 0.22) 1px, transparent 1px),
+    linear-gradient(rgba(31, 61, 43, 0.22) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 84%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  box-shadow: 0 24px 70px rgba(18, 36, 25, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.section-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid rgba(143, 207, 154, 0.72);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
