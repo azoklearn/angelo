@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Elagueur securise en hauteur</title>
+  <desc id="desc">Scene lumineuse d'un elagueur equipe intervenant dans un arbre au-dessus d'un jardin.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#dcebdd" offset="0"/>
+      <stop stop-color="#8fb99b" offset=".5"/>
+      <stop stop-color="#243e2b" offset="1"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".24" cy=".18" r=".42">
+      <stop stop-color="#fff8db" offset="0"/>
+      <stop stop-color="#fff8db" stop-opacity=".55" offset=".28"/>
+      <stop stop-color="#fff8db" stop-opacity="0" offset="1"/>
+    </radialGradient>
+    <linearGradient id="bark" x1="0" x2="1">
+      <stop stop-color="#5b3d26" offset="0"/>
+      <stop stop-color="#9a6c3d" offset=".45"/>
+      <stop stop-color="#3c291c" offset="1"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <rect width="1600" height="1000" fill="url(#sun)"/>
+  <g opacity=".35" filter="url(#soft)">
+    <circle cx="1110" cy="150" r="210" fill="#e6f1d9"/>
+    <circle cx="1280" cy="300" r="260" fill="#1f3d2b"/>
+    <circle cx="1220" cy="620" r="290" fill="#172b1e"/>
+  </g>
+  <path d="M0 704 C220 606 334 650 510 592 C770 506 980 620 1600 492 L1600 1000 L0 1000 Z" fill="#203a28" opacity=".62"/>
+  <path d="M0 800 C250 716 512 790 746 700 C1040 586 1258 760 1600 630 L1600 1000 L0 1000 Z" fill="#102119"/>
+  <g opacity=".86">
+    <path d="M1042 1000 C1030 840 1004 681 941 515 C907 426 921 346 972 247 C1017 162 1026 100 1008 0 L1132 0 C1122 122 1121 230 1168 316 C1230 431 1272 541 1261 668 C1249 796 1284 892 1370 1000 Z" fill="url(#bark)"/>
+    <path d="M1078 118 C1010 222 938 316 807 375" fill="none" stroke="#6b472d" stroke-width="42" stroke-linecap="round"/>
+    <path d="M1141 294 C1224 236 1300 187 1420 166" fill="none" stroke="#5a3b27" stroke-width="35" stroke-linecap="round"/>
+    <path d="M1147 420 C1284 426 1392 496 1500 620" fill="none" stroke="#6a472e" stroke-width="31" stroke-linecap="round"/>
+    <path d="M1020 456 C920 528 828 598 680 628" fill="none" stroke="#6e4a30" stroke-width="34" stroke-linecap="round"/>
+  </g>
+  <g opacity=".96">
+    <circle cx="800" cy="320" r="190" fill="#315c39"/>
+    <circle cx="679" cy="418" r="160" fill="#477247"/>
+    <circle cx="990" cy="244" r="190" fill="#24492f"/>
+    <circle cx="1240" cy="292" r="210" fill="#2f5b38"/>
+    <circle cx="1398" cy="486" r="190" fill="#1f3d2b"/>
+    <circle cx="908" cy="559" r="175" fill="#3f6f43"/>
+  </g>
+  <g transform="translate(740 360)">
+    <path d="M88 18 C114 60 115 110 78 150 C45 186 0 187 -28 154 C-56 121 -49 67 -22 31 C3 -2 55 -18 88 18 Z" fill="#e69f57"/>
+    <path d="M20 126 L87 155 L66 318 L-25 318 L-37 160 Z" fill="#f1a536"/>
+    <path d="M62 140 L160 106" stroke="#e6e9df" stroke-width="16" stroke-linecap="round"/>
+    <path d="M-18 150 L-98 223" stroke="#e6e9df" stroke-width="16" stroke-linecap="round"/>
+    <path d="M-7 314 L-35 430" stroke="#1b2c24" stroke-width="22" stroke-linecap="round"/>
+    <path d="M54 312 L122 412" stroke="#1b2c24" stroke-width="22" stroke-linecap="round"/>
+    <path d="M3 122 C18 196 45 250 83 312" fill="none" stroke="#1f3d2b" stroke-width="10"/>
+    <path d="M-54 64 C16 24 87 20 140 44" fill="none" stroke="#e8f1df" stroke-width="7" stroke-dasharray="12 16"/>
+    <circle cx="42" cy="2" r="34" fill="#f4d46b"/>
+    <path d="M11 -9 C28 -46 87 -43 103 -5 C70 -15 45 -16 11 -9 Z" fill="#d94832"/>
+  </g>
+  <g opacity=".7">
+    <path d="M680 750 C752 706 850 716 933 742 C998 762 1076 748 1162 722 C1110 790 1025 820 920 810 C832 801 760 782 680 750 Z" fill="#bfd8bc"/>
+    <rect x="156" y="778" width="460" height="118" rx="24" fill="#f4f5ef" opacity=".62"/>
+    <rect x="210" y="818" width="330" height="22" rx="11" fill="#dbe6d8"/>
+  </g>
+</svg>

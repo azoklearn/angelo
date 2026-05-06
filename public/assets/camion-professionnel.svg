@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img" aria-labelledby="title desc">
+  <title id="title">Camion professionnel</title>
+  <desc id="desc">Camion professionnel stationne pres d'un jardin propre, ambiance premium lumineuse.</desc>
+  <defs>
+    <linearGradient id="scene" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#fbf8e9" offset="0"/>
+      <stop stop-color="#d7e6d2" offset=".52"/>
+      <stop stop-color="#1f3d2b" offset="1"/>
+    </linearGradient>
+    <linearGradient id="van" x1="0" x2="1">
+      <stop stop-color="#ffffff" offset="0"/>
+      <stop stop-color="#e2eadf" offset=".55"/>
+      <stop stop-color="#bbc9b7" offset="1"/>
+    </linearGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#scene)"/>
+  <circle cx="208" cy="160" r="130" fill="#fff0ba" opacity=".65"/>
+  <g opacity=".86">
+    <circle cx="740" cy="260" r="220" fill="#315d38"/>
+    <circle cx="840" cy="420" r="190" fill="#24492f"/>
+    <circle cx="622" cy="448" r="180" fill="#477247"/>
+  </g>
+  <path d="M0 770 C230 642 408 760 600 678 C760 610 880 654 1000 610 L1000 1250 L0 1250 Z" fill="#517b45"/>
+  <ellipse cx="520" cy="875" rx="390" ry="84" fill="#142017" opacity=".24" filter="url(#shadow)"/>
+  <g transform="translate(100 500)">
+    <rect x="0" y="125" width="655" height="250" rx="34" fill="url(#van)"/>
+    <path d="M632 190 L806 220 C850 228 884 265 895 310 L910 375 L632 375 Z" fill="#1f3d2b"/>
+    <rect x="678" y="238" width="120" height="78" rx="12" fill="#dfeadf"/>
+    <rect x="76" y="176" width="355" height="118" rx="18" fill="#f6faf4"/>
+    <path d="M106 250 L260 250" stroke="#1f3d2b" stroke-width="17" stroke-linecap="round"/>
+    <path d="M106 286 L340 286" stroke="#8fcf9a" stroke-width="17" stroke-linecap="round"/>
+    <circle cx="158" cy="402" r="68" fill="#172018"/>
+    <circle cx="708" cy="402" r="68" fill="#172018"/>
+    <circle cx="158" cy="402" r="28" fill="#f4f8ee"/>
+    <circle cx="708" cy="402" r="28" fill="#f4f8ee"/>
+  </g>
+  <g fill="#edf4e6" opacity=".82">
+    <rect x="122" y="970" width="310" height="34" rx="17"/>
+    <rect x="162" y="1030" width="205" height="24" rx="12"/>
+  </g>
+</svg>
